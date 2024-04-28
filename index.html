@@ -1,0 +1,212 @@
+<!Doctype html>
+<html>
+    <!DOCTYPE html>
+
+    <meta charset="utf-8">
+    <title>Bookshop.Sakrit</title>
+    <div class="sidenav">
+ <a href="*">About</a>
+ <a href="*">mine</a>
+
+
+    </div>
+    
+<style>
+ul  {
+    list-style-type:none;
+    margin: 0;
+    padding: 1rem;
+    overflow:hidden;
+}
+li  {
+    float:left;
+}
+li a {
+    display: inline-block;
+    padding: 1rem;
+    background-color:grey;
+}
+
+</style>
+<nav>
+<ul>
+    <li><a href="/Home.html">Home</a></li>
+    <li><a href="file:///Users/sakthiprabhurajan/Desktop/Form.html">Form</a></li>
+    <div class="dropdown">
+        <button class="dropbtn">Genres</button>
+        <div class="dropdown-content">
+            <a href="#">Science Fiction</a>
+            <a href="#">Realistic Fiction</a>
+            <a href="#"> Indian Comical fiction</a>
+        </div>
+    </div>
+</nav>
+    <style>
+    .dropbtn{
+        background-color:azure;
+        color:grey;
+        padding: 16px;
+        font-size: 14px;
+        border: none; 
+    }
+    .dropdown {
+        position:relative;
+        display:inline-block;
+    }
+    .dropdown-content {
+        display:none;
+        position: relative;
+        background-color:azure ;
+        min-width: 150px;
+        box-shadow:0px 8px 19px 0px rgba(1, 3, 83, 0.2);
+        z-index:1 ;
+    }
+.dropdown-content a {
+    color:black;
+    padding:12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{background-color:grey}
+.dropdown:hover .dropdown-content{display:block;}
+    
+</style>
+
+        
+
+</ul>
+
+    <head>
+    <style>
+
+    #gallery{
+       
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    
+    .box{
+        border: 10px solid green;
+        border-color:green;
+        margin: 10px;
+        width:110px;
+        height:110px;
+        
+    }
+
+   </style>
+   </head>
+   <body>
+    <div id="gallery">
+        <div class="box">Product 1</div>
+        <div class="box">Product 2</div>
+        <div class="box">Product 3</div>
+        <div class="box">Product 4</div>
+        <div class="box">Product 5</div>
+      
+        <div class="box">Product 3</div>
+        <div class="box">Product 4</div>
+        <div class="box">Product 5</div>
+        <div class="box">Product 3</div>
+        <div class="box">Product 4</div>
+        <div class="box">Product 5</div>
+   </div>
+   
+
+</div>
+
+
+<input type="text" id="searchBar" onkeyup="function2()"
+placeholder="What would you like to search for?" title="Type in a book">
+<ul id="myList">
+    <li>Wimpy kid</li>
+    <li>Big nate </li>
+    <li>Fat</li>
+    <li>Auto</li>
+    <li>Wet</li>
+
+</ul>
+<style>
+ #search{
+ width:100%;
+ font-size:18px;
+ padding: 11px;
+ border: 1px solid black;
+ }
+ #menu{
+ list-style-type: none;
+ padding: 0px;
+ margin:0px;
+ 
+ }
+#menulist{
+    padding: 12px;
+    text-decoration: none;
+    color: blue;
+    display: block;
+}
+#menulisthover:hover{
+    background-color: aquamarine;
+
+}
+</style>
+<script>
+
+    function function2(){
+        var userinput,filter,ul,li,a,i;
+        input=document.getElementById("searchBar");
+        filter=input.value.toUpperCase();
+        ul=document.getElementById("myList");
+        li= ul.getElementsByTagName("li");
+    for (i=0;i<li.length;i++) {
+        array=li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase.indexOf(filter)>-1){
+             li[i].style.display="";
+        }   else {
+            li[i].style.display="none";
+        }
+      }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

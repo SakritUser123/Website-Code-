@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>
+javascript file
+</title>
+<form>
+    <label>NAME:</label><br>
+    <input type="text" id="input_info1" value="Enter your name" ><br>
+    <label>AGEE:</label><br> 
+    <input type="text" id="input_info2" value="Enter your age" ><br>
+   
+    <input type="submit" value="submit" onclick=giver()>
+    <script>
+  
+        function giver () {
+            var form=document.getElementById("input_info1").value;
+            var form1=document.getElementById("input_info2").value;
+
+            alert("Your name is"+" " +form);
+            alert("Your age is"+" " +form1);
+            let userAddress = prompt("enter your address");
+
+            alert(form + "age of " + form1 + " lives in " + userAddress)
+
+
+        }
+    </script>
+
+</form>
+  
